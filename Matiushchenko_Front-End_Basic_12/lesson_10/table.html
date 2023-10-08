@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Table</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		table, td, th {
+			border: 1px solid black;
+		}
+		th, td {
+			width: 64px;
+			height: 64px;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<header class="header">
+			<div class="container header-container">
+				<a class="logo" href="index.html">
+					<img src="img/logo.png" alt="logo" width="80" height="32">
+				</a>
+				<ul class="header_list">
+					<li><a href="index.html">Main page</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li>
+						<a href="#">Homeworks</a>
+						<ul class="header_second_list">
+							<li><a href="#">Table</a></li>
+							<li><a href="inline-block.html">Inline-block</a></li>
+							<li><a href="float.html">Float</a></li>
+							<li>
+								<a href="#">Layouts</a>
+								<ul class="header_third_list">
+									<li><a href="flex.html">Flex</a></li>
+								</ul>
+							</li>	
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+	</div>
+
+	<table style="background:rgb(86, 80, 117)">
+        <caption>Табличка</caption>
+        
+        <tr>
+			<td colspan="2" style="background: rgb(119, 111, 175);">1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td rowspan="3" style="background: rgb(148, 73, 123);">6</td>
+		</tr>
+
+		<tr>
+			<td rowspan="2" style="background: rgb(147, 158, 218);">1</td>
+			<td>2</td>
+            <td colspan="3" rowspan="2" style="background: rgb(225, 103, 184);">3</td>
+		</tr>
+        
+        <tr>
+			<td>2</td>
+		</tr>
+
+        <tr>
+			<td colspan="3" rowspan="2" style="background: rgb(213, 219, 102);">1</td>
+            <td>4</td>
+            <td>5</td>
+            <td rowspan="2" style="background: rgb(147, 158, 218);">6</td>
+		</tr>
+
+        <tr>
+            <td colspan="2" style="background: rgb(119, 111, 175);">2</td>
+		</tr>
+	</table>
+</body>
+</html>
